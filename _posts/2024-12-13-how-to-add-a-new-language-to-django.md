@@ -2,6 +2,7 @@
 layout: post
 title: How to add a custom language to Django
 description: Learn how to seamlessly add custom languages to your Django project.
+permalink: /how-to-add-a-new-language-to-django
 tags: Python Django Translations
 ---
 
