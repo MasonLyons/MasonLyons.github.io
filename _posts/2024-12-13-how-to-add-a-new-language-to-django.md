@@ -35,8 +35,14 @@ class CoreConfig(AppConfig):
             "name_local": "Malti",
         }
 ```
-This can then be referenced in your `settings.py` as you'd normally do for a language
+It's key that the `django.conf.locale.LANG_INFO` key matches up with the `code` value, in this case `mt`.
+The other keys are for the following:
+ - bidi: languages that are essentially written and read from right-to-left.
+ - code: how the url will appear in the url. For example `https://example.come/mt/blog`
+ - name: The name of the language in english
+ - name_locale: The name of the language as written in the language
 
+This can then be referenced in your `settings.py` as you'd normally do for a language
 ``` python
 LANGUAGES = [
     ...
